@@ -7,6 +7,7 @@
     <title>PortFolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="pop.css">
     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
@@ -36,9 +37,9 @@
 
     <div class="container Me">
         <div class="sociols">
-            <img src="assets/linkedin.png" alt="linkedin">
-            <img src="assets/github.png" alt="linkedin">
-            <img src="assets/dribble.png" alt="linkedin">
+           <a href="https://web.whatsapp.com/"> <img src="assets/linkedin.png" alt="linkedin"></a>
+           <a href="https://twitter.com/"><img src="assets/github.png" alt="linkedin"></a> 
+            <a href="https://web.facebook.com/"><img src="assets/dribble.png" alt="linkedin"></a>
             
 
         </div>
@@ -222,19 +223,19 @@
                     <div class="msg-icon"><img src="assets/check-mark.png" alt=""></div>
                     <small>E-mail</small>
                     <h6>mucyoemmanuel567@gmail.com</h6>
-                    <a href="#">Send a  Message</a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Send a  Message</a>
                 </div>
                 <div class="msg-card">
                     <div class="msg-icon"><img src="assets/phone-call.png" alt=""></div>
                     <small>Whatsapp</small>
                     <h6>+250 785 710 648</h6>
-                    <a href="#">Send a  Message</a>
+                    <a href="https://web.whatsapp.com/">Send a  Message</a>
                 </div>
                 <div class="msg-card">
                     <div class="msg-icon"><img src="assets/messenger.png" alt=""></div>
                     <small>Messenger</small>
                     <h6>mucyoemmanuel</h6>
-                    <a href="#">Send a  Message</a>
+                    <a href="https://www.messenger.com/">Send a  Message</a>
                 </div>
             </div>
             <div class="contact-form">
@@ -252,7 +253,24 @@
                         <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Your Message"></textarea>
                         <div id="errorMsg"></div>
                     </div>
-                    <button type="submit" class="btn">Send a  Message</button>
+                    <script>
+                        let popup = document.getElementById("popup");
+                        function openPopup(){
+                            popup.classList.add("open-popup"); 
+                        }
+                        function closePopup(){
+                            popup.classList.remove("open-popup"); 
+                        }
+                     </script> 
+                    
+                    <button type="submit" class="btn" onclick="openPopup()">Send a  Message</button>
+                    <div class="popup" id="popup">
+                        <img src="check.png" alt="">
+                        <h2>Thank you!</h2>
+                        <p>Your details has been successfully submitted.thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                       
+                    </div>
                 </form>
                 <script src="js/index1.js"></script> 
             </div>
@@ -264,19 +282,20 @@
         <h2>MUCYO Emmanuel</h2>
         <div class="container footer-body">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Service</li>
-                <li>Recents</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
+            <a href="#home"><li>Home</li></a>    
+            <a href="#about"><li>About</li></a>
+            <a href="#experience"><li>Experience</li></a>
+            <a href="#services"><li>Service</li></a>
+            <a href="#contact"><li>Contact</li></a> 
+            <a href="ToDoList/ToDoList/index.html"><li>Todo</li></a>    
+             <a href="calc/calc/index.html"><li>Calculator</li></a>   
+                
             </ul>
             <div class="footer-icon">
-                <img src="assets/google.png" alt="">
-                <img src="assets/github.png" alt="">
-                <img src="assets/facebook.png" alt="">
-                <img src="assets/linkedin.png" alt="">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="assets/google.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="assets/github.png" alt=""></a>
+                <a href="https://web.facebook.com/"><img src="assets/facebook.png" alt=""></a>
+                <a href="https://web.facebook.com/"><img src="assets/linkedin.png" alt=""></a>
             </div>
             <p>© Mucyo. all right reserved <br>Klab &copy;Guidence</p>
 
