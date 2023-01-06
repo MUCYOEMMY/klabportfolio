@@ -51,6 +51,9 @@ form h1{
     border-color: #09c372;
 
 }
+.input-container.input-container.success textarea{
+    border-color: #09c372;
+}
 .input-container.error input{
     border-color: rgba(246, 6, 6, 0.886);
     /* transform: rotateZ(3deg); */
